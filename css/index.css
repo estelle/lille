@@ -1,4 +1,9 @@
 @charset "UTF-8";
+:root {
+  --bg: hsl(270, 68%, 21%);
+  --bglight: lighten(hsl(270, 68%, 21%), 20%);
+}
+
 /* cyrillic-ext */
 @font-face {
   font-family: "Montserrat";
@@ -176,12 +181,12 @@ body,
   left: 0px;
   top: 0px;
   overflow: scroll;
-  background: #36115a;
+  background: var(--bg);
 }
 
 .slide {
-  background-image: linear-gradient(to bottom, #ffffff00, #ffffff99);
-  background-image: conic-gradient(from 0deg at -5% 100%, #36115a, #6921b0 180deg);
+  background-image: linear-gradient(to bottom, #ffffff00, #ffffff33);
+  background-image: conic-gradient(from 0deg at -5% 100%, var(--bg), var(--bglight) 180deg);
 }
 
 .slide.intro {
@@ -510,47 +515,6 @@ ol {
   font-size: 0.8rem;
 }
 
-.TWEET blockquote {
-  background-color: white;
-  width: 80vw;
-  margin: auto;
-  border-radius: 10px;
-  padding: 0.25em 0.5em;
-  color: #333;
-  font-family: "helvetica Neue", helvetica, arial;
-  display: flex;
-  align-items: flex-start;
-  font-size: 1.2rem;
-}
-.TWEET blockquote > a > img {
-  border-radius: 50%;
-  float: left;
-  height: 2em;
-}
-.TWEET blockquote div > a span:first-of-type {
-  font-size: 1rem;
-  color: #14171a;
-  font-weight: 700;
-}
-.TWEET blockquote div > a span:last-of-type {
-  font-size: 0.8rem;
-  color: black;
-}
-.TWEET blockquote div > p {
-  font-size: 1.2rem;
-}
-.TWEET blockquote div .date {
-  color: #657786;
-  font-size: 0.8rem;
-  text-shadow: none;
-  display: block;
-  margin-top: 0.5em;
-}
-
-.tweet blockquote {
-  font-size: calc((6vh + 6vw) / 2);
-}
-
 table {
   margin: auto;
   border: 1px solid #DEDEDE;
@@ -661,7 +625,7 @@ dd {
   left: 0;
   width: 100%;
   text-align: center;
-  background-color: #36115a;
+  background-color: var(--bg);
 }
 
 .intro em.foo {
@@ -713,60 +677,14 @@ dd {
   align-items: flex-end;
 }
 
-.tldr li {
-  font-size: 6vh;
-}
-
 .tldr li em {
   display: inline-block;
-  font-size: 1.25em;
+  font-size: 1.2em;
   color: magenta;
-}
-
-video {
-  width: calc(45vw - 100px);
-  min-width: 260px;
-}
-
-.flex {
-  display: flex;
-  list-style-type: none;
 }
 
 .takeSpace {
   height: calc(100vh - 6em);
-}
-
-.notTheSame {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.notTheSame h2 {
-  text-align: center;
-  padding: 0 20px;
-  font-size: 2rem;
-}
-
-.list-of-images ul,
-.list-of-images ol {
-  display: flex;
-  list-style-type: none;
-  align-content: flex-start;
-  margin: 0;
-}
-
-.list-of-images li {
-  min-width: 13vw;
-  flex: 0 0 150px;
-  text-align: center;
-  font-size: 0.5rem;
-  line-height: 1;
-}
-
-.list-of-images ol li {
-  font-size: 1rem;
 }
 
 .callout {
@@ -778,31 +696,6 @@ video {
   top: 50%;
   left: 30%;
   transform: rotate(-30deg);
-}
-
-.future twitterwidget,
-.past twitterwidget,
-.future iframe,
-.past iframe {
-  opacity: 0;
-}
-
-.cloudfour {
-  display: flex;
-  align-items: flex-end;
-  list-style-type: none;
-}
-
-.cloudfour img {
-  text-align: center;
-  margin: 0 10px 0 0;
-  border: 1px solid;
-  padding: 20px 20px 0 0;
-  background-color: #226DAA;
-}
-
-.cloudfour pre {
-  letter-spacing: -5px;
 }
 
 ul.large > li:first-line,
