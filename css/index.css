@@ -660,10 +660,10 @@ div .slash {
   text-align: center;
 }
 
-.wholepoint {
+.wholepoint.wholepoint.wholepoint {
   position: absolute;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   font-size: 0.5rem;
   color: initial;
 }
