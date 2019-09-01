@@ -654,15 +654,15 @@ dd {
 }
 
 div .slash {
-  font-size: 4rem;
+  font-size: 2rem;
   -webkit-transform: rotate(-10deg);
-  margin-top: 150px;
+  margin-top: 100px;
   text-align: center;
 }
 
 .wholepoint.wholepoint.wholepoint {
   position: absolute;
-  bottom: 20px;
+  bottom: 3em;
   left: 20px;
   font-size: 0.5rem;
   color: initial;
