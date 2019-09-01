@@ -655,9 +655,8 @@ dd {
 
 div .slash {
   font-size: 2rem;
-  -webkit-transform: rotate(-10deg);
-  margin-top: 100px;
-  text-align: center;
+  transform: rotate(-10deg) translatey(-1em);
+  margin-top: 1em;
 }
 
 .wholepoint.wholepoint.wholepoint {
