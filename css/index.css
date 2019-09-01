@@ -185,7 +185,7 @@ body,
 }
 
 .slide {
-  background-image: linear-gradient(to bottom, #ffffff00, #ffffff33);
+  background-image: linear-gradient(to bottom, #ffffff00, #ffffff66);
   background-image: conic-gradient(from 0deg at -5% 100%, var(--bg), var(--bglight) 180deg);
 }
 
@@ -294,6 +294,10 @@ pre b {
 p {
   font-size: 1.5rem;
   margin: 1rem 0 0 0;
+}
+
+blockquote {
+  font-size: 2rem;
 }
 
 #next,
@@ -647,6 +651,21 @@ dd {
 
 .books img {
   max-width: 13vw;
+}
+
+div .slash {
+  font-size: 4rem;
+  -webkit-transform: rotate(-10deg);
+  margin-top: 150px;
+  text-align: center;
+}
+
+.wholepoint {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 0.5rem;
+  color: initial;
 }
 
 .dollar {
